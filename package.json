@@ -1,0 +1,44 @@
+{
+    "name": "dtj-vip-lineas",
+    "version": "1.0.0",
+    "description": "La nueva forma de Jugar y Ganar - DTodoJuego",
+    "main": "index.js",
+    "dependencies": {
+        "debug": "^3.2.6",
+        "electron-packager": "^14.0.0",
+        "fd-slicer": "^1.0.1",
+        "find-up": "^1.1.2",
+        "is-finite": "^1.0.2",
+        "is-fullwidth-code-point": "^1.0.0",
+        "jsonfile": "^5.0.0",
+        "mkdirp": "^0.5.1",
+        "ms": "^2.1.2",
+        "number-is-nan": "^1.0.1",
+        "oauth-sign": "^0.9.0",
+        "object-assign": "^4.1.1",
+        "object-keys": "^0.4.0",
+        "parse-json": "^2.2.0",
+        "path": "^0.12.7",
+        "path-exists": "^3.0.0",
+        "path-parse": "^1.0.6",
+        "path-type": "^1.1.0",
+        "pend": "^1.2.0",
+        "performance-now": "^2.1.0",
+        "pify": "^2.3.0",
+        "pinkie": "^2.0.4",
+        "pinkie-promise": "^2.0.1",
+        "process-nextick-args": "^2.0.1",
+        "psl": "^1.1.33",
+        "simple-encryptor": "^3.0.0",
+        "spdx-exceptions": "^2.2.0"
+    },
+    "devDependencies": {
+        "electron": "^5.0.6"
+    },
+    "scripts": {
+        "start": "electron index.js",
+        "build": "electron-packager . dtodojuego-vip-linea --overwrite --icon=./public/assets/icon.ico --prune=true --arch=ia32"
+    },
+    "author": "Franklin Sánchez",
+    "license": "ISC"
+}
