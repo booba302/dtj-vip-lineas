@@ -10,9 +10,9 @@ let closeable = false;
 let status = true;
 let webContLin;
 
-let flash = app.getPath('pepperFlashSystemPlugin');
-app.commandLine.appendSwitch('ppapi-flash-path', flash);
-console.log(config.icon);
+app.commandLine.appendSwitch('ppapi-flash-path', app.getPath('pepperFlashSystemPlugin'));
+
+console.log(app.getPath('pepperFlashSystemPlugin'));
 
 let createLinea = externalDisplay => {
 
@@ -105,7 +105,9 @@ let createKenoWin = () => {
     contents.addListener('did-navigate', function(evt, newURL, httpResponseCode, httpStatusText) {
         if (newURL.includes('/casino')) {
             contents.loadURL(config.URLKENO);
-            webContLin.loadURL(config.URLLINEA);
+            if (externalDisplay) {
+                webContLin.loadURL(config.URLLINEA)
+            }
         } else if (newURL == config.URLLOGIN) {
             kenoWin.setEnabled(closeable);
             createModal();
