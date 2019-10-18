@@ -12,8 +12,6 @@ let webContLin;
 
 app.commandLine.appendSwitch('ppapi-flash-path', app.getPath('pepperFlashSystemPlugin'));
 
-console.log(app.getPath('pepperFlashSystemPlugin'));
-
 let createLinea = externalDisplay => {
 
     let linea = new BrowserWindow({

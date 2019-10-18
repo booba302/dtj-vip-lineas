@@ -2,7 +2,7 @@
     "name": "dtj-vip-lineas",
     "version": "1.0.0",
     "description": "La nueva forma de Jugar y Ganar - DTodoJuego",
-    "main": "index.js",
+    "main": "index-linea.js",
     "dependencies": {
         "debug": "^3.2.6",
         "electron-packager": "^14.0.0",
@@ -37,7 +37,8 @@
     },
     "scripts": {
         "start": "electron index.js",
-        "build": "electron-packager . dtodojuego-vip-linea --overwrite --icon=./public/assets/icon.ico --prune=true --arch=ia32"
+        "build": "electron-packager . dtodojuego-119-5463 --overwrite --icon=./public/assets/icon.ico --prune=true --arch=ia32",
+        "build-linea": "electron-packager . dtodojuego-linea-one-screen --overwrite --icon=./public/assets/icon.ico --prune=true --arch=ia32"
     },
     "author": "Franklin Sánchez",
     "license": "ISC"
