@@ -33,7 +33,7 @@
         "spdx-exceptions": "^2.2.0"
     },
     "devDependencies": {
-        "electron": "^5.0.6"
+        "electron": "^9.4.0"
     },
     "scripts": {
         "start": "electron index.js",
